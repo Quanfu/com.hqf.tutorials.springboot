@@ -19,6 +19,6 @@ public class SchedulingConfig {
 
     @Scheduled(cron = "0/20 * * * * ?") // 每20秒执行一次
     public void scheduler() {
-        System.out.println(">>>>>>>>> SchedulingConfig.scheduler()" + new Date());
+        System.out.println(">>>>>>>>> SchedulingConfig.scheduler()  " + new Date());
     }
 }
