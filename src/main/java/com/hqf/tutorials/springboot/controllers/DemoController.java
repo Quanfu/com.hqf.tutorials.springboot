@@ -24,4 +24,9 @@ public class DemoController {
         return demos;
     }
 
+    @RequestMapping("/zeroException")
+    public int zeroException(){
+        return 100/0;
+    }
+
 }
