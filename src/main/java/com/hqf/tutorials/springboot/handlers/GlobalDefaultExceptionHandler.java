@@ -1,5 +1,7 @@
 package com.hqf.tutorials.springboot.handlers;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
@@ -10,6 +12,8 @@ import javax.servlet.http.HttpServletRequest;
  */
 @ControllerAdvice
 public class GlobalDefaultExceptionHandler {
+
+    private static final Logger log = LoggerFactory.getLogger(GlobalDefaultExceptionHandler.class);
 
     @ExceptionHandler(value = Exception.class)
     public void defaultErrorHandler(HttpServletRequest req, Exception e) {
@@ -28,7 +32,7 @@ public class GlobalDefaultExceptionHandler {
 //      return mav;
 
         //打印异常信息：
-
+        log.info(">>>>>>>>>>>>>>>>>>defaultErrorHandler");
         System.out.println("GlobalDefaultExceptionHandler.defaultErrorHandler()");
         e.printStackTrace();
 
