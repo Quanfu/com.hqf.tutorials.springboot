@@ -1,9 +1,15 @@
 package com.hqf.tutorials.springboot.models;
 
+import javax.persistence.*;
+
 /**
  * Created by huoquanfu on 2016/5/25.
  */
+@Entity//加入这个注解，Demo就会进行持久化了，在这里没有对@Table进行配置，请自行配置。
 public class Demo {
+
+    @Id
+    @GeneratedValue
     private long id;//主键.
     private String name;//测试名称.
 
