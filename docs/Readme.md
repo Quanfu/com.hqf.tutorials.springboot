@@ -6,3 +6,4 @@
 4. [Spring Boot热部署](Springboot_4th.md)
 5. [Spring Boot 连接MySQL](Springboot_5th.md)
 6. [SpringBoot JAP Hibernate](Springboot_6th.md)
+7. [Spring Boot Junit单元测试](Springboot_7th.md)
