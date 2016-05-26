@@ -7,3 +7,4 @@
 5. [Spring Boot 连接MySQL](Springboot_5th.md)
 6. [SpringBoot JAP Hibernate](Springboot_6th.md)
 7. [Spring Boot Junit单元测试](Springboot_7th.md)
+8. [Spring Boot 监控和管理生产环境](Springboot_8th.md)
